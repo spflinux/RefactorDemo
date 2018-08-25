@@ -121,11 +121,9 @@ public class CustomerTest {
 
         String statement = customer.htmlStatement();
 
-        System.out.println(statement);
-
-        assertEquals("<H1>Rentals for <EM>kasper</EM></H1><P>\n" +
-                "Titanic: 3.0<BR>\n" +
-                "<P>You owe<EM>3.0</EM><P>\n" +
-                "On this rental you earned <EM>1</EM> frequent renter points<P>", statement);
+        assertEquals("<H1>Rentals for <EM>kasper</EM></H1><P>\n"
+                + "Titanic: 3.0<BR>\n"
+                + "<P>You owe<EM>3.0</EM><P>\n"
+                + "On this rental you earned <EM>1</EM> frequent renter points<P>", statement);
     }
 }
