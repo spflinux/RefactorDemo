@@ -8,14 +8,27 @@ package rentalstore;
 public class Statement extends StatementAbstract{
 
     String headerString(String customerName) {
-        return null;
+        String result = "Rental Record for "
+                + customerName + "\n";
+        return result;
     }
 
-    String eachRentalString(String movieTitle) {
-        return null;
+    String eachRentalString(String movieTitle,double thisAmount) {
+        String result = "\t"
+                + movieTitle
+                + "\t"
+                + String.valueOf(thisAmount)
+                + "\n";
+        return result;
     }
 
     String footerString(double totalAmount, int frequentRenterPoints) {
-        return null;
+        String result = "Amount owed is "
+                + String.valueOf(totalAmount)
+                + "\n";
+        result += "You earned "
+                + String.valueOf(frequentRenterPoints)
+                + " frequent renter points";
+        return result;
     }
 }
